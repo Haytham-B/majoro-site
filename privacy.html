@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="majoro-source" content="PrivacyPolicyContent.swift:english">
+<meta name="majoro-source-sha256" content="dac2323ed08219e76cdacbef659da4bf809e6a8c454900e55111b1eb1e018857">
+<title>Privacy Policy — Majoro</title>
+<style>
+body{font:16px/1.6 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;max-width:760px;margin:0 auto;padding:32px 20px;color:#1d1d1f;background:#fff}
+h1{font-size:1.7em;line-height:1.25} h2{margin-top:2em;font-size:1.3em} h3{font-size:1.1em}
+a{color:#8a6d1f} code{background:#f4f1ea;padding:0 4px;border-radius:4px}
+nav{font-size:.9em;margin-bottom:24px} footer{margin-top:48px;font-size:.85em;color:#6e6e73}
+@media (prefers-color-scheme:dark){body{background:#111;color:#eee} a{color:#d9b75a} code{background:#2a2720}}
+</style>
+</head>
+<body>
+<nav><a href="index.html">Majoro</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="confidentialite.html">Français</a></nav>
+<h1>Privacy Policy — Majoro</h1>
+<p>Last updated: August 3, 2026 — Version 2.1<br>
+Data Controller: Haytham B. (sole proprietor) — contact: <a href="mailto:htm.bkhss@gmail.com">htm.bkhss@gmail.com</a></p>
+<p>Coverage: European Union (GDPR), United Kingdom (UK GDPR), United States (CCPA/CPRA California + federal law), Canada (PIPEDA + Quebec Law 25), Australia (Privacy Act 1988).</p>
+<h2>In short</h2>
+<ul>
+<li>Your tasks and account are stored on <strong>Supabase</strong> (EU-hosted).</li>
+<li>Your AI chat messages are relayed by our secure gateway to <strong>Google Cloud — Vertex AI</strong>, processed in the <strong>European Union</strong> or the <strong>United States</strong> depending on your account country (see §4), after <strong>automatic on-device anonymization</strong>.</li>
+<li>Your purchases are handled by <strong>Apple</strong> and tracked by <strong>RevenueCat</strong>.</li>
+<li><strong>No advertising, no third-party trackers, no data reselling.</strong></li>
+<li>You can <strong>delete your account and all your data at any time</strong> from the app.</li>
+</ul>
+<h2>1. Who we are</h2>
+<p>The "Majoro" app (the "App") is operated by Haytham B., sole proprietor (the "Publisher"), acting as Data Controller under the GDPR. Questions: <a href="mailto:htm.bkhss@gmail.com.">htm.bkhss@gmail.com.</a></p>
+<h2>2. Data we process</h2>
+<h3>2.1 Data you provide</h3>
+<ul>
+<li>Account identifiers: email address, display name.</li>
+<li>Authentication: Sign in with Apple / Google tokens, sessions (stored in the iOS Keychain and Supabase Auth).</li>
+<li>Tasks, projects, custom categories, journal: titles, dates, descriptions, completion state.</li>
+<li>AI chat conversations: the messages you type and Majoro's responses.</li>
+<li>Subscription state: premium status, purchase history (via Apple + RevenueCat).</li>
+<li>Preferences: language, theme, notification times.</li>
+</ul>
+<h3>2.2 Data read with your permission (stays on device)</h3>
+<ul>
+<li><strong>HealthKit (read-only)</strong>: steps, active energy, exercise minutes — used only locally for your dashboard. Never sent to any server or to the AI.</li>
+<li><strong>Microphone + speech recognition</strong>: to dictate tasks. Audio is processed by Apple's engine; we neither store nor transmit it.</li>
+<li><strong>Screen Time / Family Controls</strong>: threshold detection (e.g. "&gt; 3h today") and optional app blocking during a "Let's do it now" session. The per-app breakdown never leaves your device; we only receive the trigger.</li>
+<li><strong>Local notifications</strong>: locally scheduled reminders. We do not use remote push.</li>
+</ul>
+<h3>2.3 Technical data logged</h3>
+<ul>
+<li>Length (not content) of AI requests — for the daily quota.</li>
+<li>HTTP error codes from our gateway — to diagnose outages.</li>
+<li>Authentication events (login / logout) — security.</li>
+<li>Usage events <strong>linked to your account</strong> (onboarding steps, paywall opening, interactions with the butler's messages, subscription lifecycle events relayed by our purchase manager) — on our own infrastructure, no third-party analytics tool. These events carry your account identifier: they are not anonymous, and they are deleted along with your account.</li>
+<li>A few <strong>profile preferences</strong> linked to the same identifier: chosen mascot, butler tone, language, app version and subscription type (free or premium). They tell us which features are used, and by whom.</li>
+</ul>
+<ul>
+<li><strong>Content you report.</strong> When you use "Report this content" on a butler reply, we retain that reply <strong>and the question that preceded it</strong> — without it there is no way to judge whether the reply was at fault. Both are first <strong>anonymised</strong> on your device, by the same masking that already protects your messages before they reach the AI provider: first names, surnames, phone numbers, email addresses and bank details are replaced by markers. We attach your account identifier, language and app version. This is the only case where conversation content is retained <strong>durably</strong> on our servers, and it only happens if you trigger it. These reports are deleted along with your account.</li>
+</ul>
+<p>We <strong>never</strong> log: your message content, your task titles, your health values. Two exceptions, and both are bounded: the report described above, which you trigger yourself and whose content is anonymised before it leaves; and the technical cache described in §4, which keeps the assistant's reply long enough for it to reach you, normally less than two hours, and never holds your message.</p>
+<h2>3. Sub-processors</h2>
+<p>We rely on the following providers, governed by data processing agreements (DPAs) or equivalents:</p>
+<ul>
+<li><strong>Supabase</strong> — database, authentication, server functions. Hosting: EU.</li>
+<li><strong>Google Cloud (Vertex AI)</strong> — AI chat inference. Processing: European Union or United States depending on your account country (§4). Receives only requests (previously anonymized).</li>
+<li><strong>RevenueCat</strong> — subscription management. United States. Receives an anonymized ID and product identifiers.</li>
+<li><strong>Apple</strong> — Sign in with Apple, purchases (StoreKit), speech recognition.</li>
+<li><strong>Sentry</strong> — technical crash reports (stability diagnostics), without personal content of your tasks or messages.</li>
+</ul>
+<p>We do not share data with advertising networks or data brokers. No third-party tracking SDK is embedded.</p>
+<h2>4. The AI chat and its limits</h2>
+<p>When you chat with Majoro, your message travels: your device → our Supabase gateway (auth + quota) → Google Cloud Vertex AI → response → your device.</p>
+<p><strong>Where your message is processed.</strong> We do not process everyone in the same place: the region follows the <strong>country of your Apple account</strong>.</p>
+<ul>
+<li>France, Belgium, other European Economic Area countries → <strong>European Union</strong></li>
+<li>United Kingdom, Switzerland → <strong>European Union</strong></li>
+<li>United States, Canada, Australia, New Zealand → <strong>United States</strong></li>
+<li>any other country → <strong>European Union</strong></li>
+</ul>
+<p>That country comes from your App Store storefront, <strong>not from your IP address</strong>. If your account is European, your messages stay processed in the European Union even when you travel. The region is set on your first use of the assistant and does not change afterwards. You can check it at any time in <strong>Settings &gt; AI Privacy</strong>.</p>
+<p><strong>Systematic anonymization.</strong> Before any transmission, your device detects and masks sensitive data (names, emails, phone numbers, addresses, medical terms, banking identifiers, religious markers, etc.), replacing them with placeholders (<code>[PERSON_1]</code>, <code>[MED_1]</code>…). This applies to your message, recent history, and task titles provided as context. Placeholders are restored locally in the response. This is <strong>always on</strong> — no setting to enable.</p>
+<p><strong>Limits of anonymization ("best-effort").</strong> Detection relies on dictionaries and patterns: it is <strong>best-effort, not exhaustive</strong>. Information phrased unusually may go unrecognized and reach the provider unmasked. You remain in control of what you type: avoid entering highly sensitive details you would not want to leave your device.</p>
+<p><strong>No professional advice.</strong> Majoro is a productivity assistant. Its responses are <strong>not</strong> medical, legal, financial, psychological, or safety advice. Do not use Majoro for life-critical or regulated decisions. In an emergency, contact the appropriate services.</p>
+<p><strong>What our server logs.</strong> The gateway logs only technical metadata (message length, subscription tier, timestamp) for the quota — <strong>never the content</strong>. Content is forwarded to Google Cloud for inference only; it is not durably retained in our databases.</p>
+<p><strong>One exception, technical and short.</strong> The assistant's reply is kept in a service cache, long enough for your device to receive it. That cache exists so that, if the reply is lost on the way and the app asks again, you are given the same reply rather than having it regenerated and counted a second time against your quota. Your message itself is not in it: only a fingerprint computed from it is stored, from which the message cannot be reconstructed.</p>
+<p><strong>How long, exactly.</strong> A cleanup job runs every ten minutes and removes reply content one hour after the end of its useful window. In normal operation that means <strong>less than two hours</strong>. This is not an absolute guarantee: if that job is interrupted by an incident, the delay grows until it is restored. A measurement of the age of the oldest retained content exists on the server; automatic reporting of it is not yet in service.</p>
+<p><strong>What "Clear AI history" does here.</strong> Reply content is erased immediately. The technical rows themselves are kept without their content: they hold only fingerprints, and they exist so that a resend from your device is not counted a second time against your quota. They disappear at the next cleanup, and immediately along with your account.</p>
+<p><strong>What Google retains.</strong> Google contractually commits <strong>not to train or fine-tune</strong> its models on these requests. However, as a consequence of how its platform operates: requests may be <strong>cached for up to 24 hours</strong> in the data centre that served the call, within your region (to reduce latency); and if its automated safety classifiers detect potentially abusive use, the requests concerned may be <strong>logged for up to 90 days</strong> in that same region, solely to investigate that abuse, and reviewed by authorised Google personnel. This content was anonymized on your device before transmission.</p>
+<p><strong>Disabling.</strong> You can turn off the AI at any time (kill-switch in Settings): no further request goes to the gateway.</p>
+<h2>5. Your rights (GDPR and equivalents)</h2>
+<ul>
+<li><strong>Access (Art. 15)</strong>: request by email; JSON export within 30 days.</li>
+<li><strong>Rectification (Art. 16)</strong>: edit your account in Settings, or contact us.</li>
+<li><strong>Erasure (Art. 17)</strong>: Settings → Account → Delete my account. Erases <strong>all</strong> your server-side data, immediately and irreversibly. You can also clear the AI chat history from Settings → About.</li>
+<li><strong>Portability (Art. 20)</strong>: export your data as JSON.</li>
+<li><strong>Objection (Art. 21)</strong>: disable the AI — nothing further is sent to Google Cloud.</li>
+<li><strong>Automated decisions (Art. 22)</strong>: Majoro suggests but makes no automated decision of legal or significant effect; no irreversible action runs without your confirmation.</li>
+</ul>
+<p>California users (CCPA/CPRA): rights to know, delete, correct, and limit the use of sensitive information. <strong>We do not sell or share your personal information.</strong> To exercise these rights or designate an authorized agent: <a href="mailto:htm.bkhss@gmail.com.">htm.bkhss@gmail.com.</a></p>
+<p>You may lodge a complaint with your local supervisory authority.</p>
+<h2>6. Legal basis (Art. 6 GDPR)</h2>
+<ul>
+<li>Account, tasks, sync, chat: <strong>performance of contract</strong>.</li>
+<li>AI usage quota: <strong>legitimate interest</strong> (fair use).</li>
+<li>Subscriptions: <strong>performance of contract</strong>.</li>
+<li>HealthKit / Screen Time: <strong>consent</strong> (and Art. 9 for health), granted via iOS dialogs.</li>
+</ul>
+<h2>7. Retention</h2>
+<ul>
+<li>Account, tasks, projects: until you delete your account.</li>
+<li>Server-side chat history: none. Sole exception, the assistant's reply stays in a service cache, normally less than 2 hours (see §4 for the exact criterion and its limits).</li>
+<li>On-device chat history: automatically purged.</li>
+<li>AI usage logs (length): 90 days.</li>
+<li>Authentication logs: 365 days.</li>
+<li>Backups: per Supabase retention (7-day point-in-time).</li>
+</ul>
+<p>Upon account deletion, this data is erased server-side within 24h and from backups within 30 days.</p>
+<h2>8. Security</h2>
+<ul>
+<li>In transit: HTTPS / TLS.</li>
+<li>At rest: database encryption by Supabase.</li>
+<li>Authentication: tokens in the iOS Keychain (Secure Enclave when available).</li>
+<li>Isolation: row-level security (RLS) — one user can never read another's data.</li>
+</ul>
+<p>No system is infallible. In case of a suspected breach, we will notify affected users and the relevant authority within 72 hours (Art. 33 GDPR).</p>
+<h2>9. International transfers</h2>
+<ul>
+<li>Supabase: EU.</li>
+<li>Google Cloud (Vertex AI): European Union or United States, depending on your account country (§4). Transfers to the United States are covered by Google's Cloud Data Processing Addendum, which incorporates the Standard Contractual Clauses, Google also adhering to the EU–U.S. Data Privacy Framework.</li>
+<li>RevenueCat: United States, with anonymized ID and Standard Contractual Clauses (Art. 46 GDPR).</li>
+<li>Apple: per its policy and Standard Contractual Clauses.</li>
+</ul>
+<h2>10. Recommended age and minors</h2>
+<p>Because of AI interactions, the App is <strong>recommended for ages 12 and up</strong>. It is not intended for children below the applicable minimum age (notably 13 in the US and Canada, 15 in France and Australia, up to 16 in some EU countries). We do not knowingly collect data from minors below these thresholds. If you believe a child provided us data, contact us and we will delete it.</p>
+<h2>11. No warranty and limitation of liability</h2>
+<p>The App is provided "<strong>as is</strong>" and "as available", without warranty of error-free operation, accuracy of AI suggestions, or uninterrupted availability. To the extent permitted by law, the Publisher shall not be liable for indirect damages, data loss, loss of business or opportunity arising from use of the App or reliance on AI suggestions. Nothing herein limits liability for willful misconduct, gross negligence, or bodily harm. Detailed terms and the liability cap are set out in the Terms of Use, which you accept upon sign-up.</p>
+<h2>12. Changes</h2>
+<p>We update this document when a new sub-processor is added, a new data category is collected, or legal obligations change. The date at the top reflects the latest revision; substantive changes are flagged in the App.</p>
+<h2>13. Contact</h2>
+<p>For any question or request about your data: <a href="mailto:htm.bkhss@gmail.com">htm.bkhss@gmail.com</a> — response within 30 days maximum (Art. 12 GDPR).</p>
+<footer>Same text as shown inside the Majoro app.</footer>
+</body>
+</html>

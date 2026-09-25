@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="majoro-source" content="PrivacyPolicyContent.swift:french">
+<meta name="majoro-source-sha256" content="7d0e86a3f3132b4398e747a7548dc6bc1ca7e4f74e6b2c872f0ed7a1d0d0782e">
+<title>Politique de confidentialité — Majoro</title>
+<style>
+body{font:16px/1.6 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;max-width:760px;margin:0 auto;padding:32px 20px;color:#1d1d1f;background:#fff}
+h1{font-size:1.7em;line-height:1.25} h2{margin-top:2em;font-size:1.3em} h3{font-size:1.1em}
+a{color:#8a6d1f} code{background:#f4f1ea;padding:0 4px;border-radius:4px}
+nav{font-size:.9em;margin-bottom:24px} footer{margin-top:48px;font-size:.85em;color:#6e6e73}
+@media (prefers-color-scheme:dark){body{background:#111;color:#eee} a{color:#d9b75a} code{background:#2a2720}}
+</style>
+</head>
+<body>
+<nav><a href="index.html">Majoro</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="cgu.html">CGU</a> · <a href="privacy.html">English</a></nav>
+<h1>Politique de confidentialité — Majoro</h1>
+<p>Dernière mise à jour : 3 août 2026 — Version 2.1<br>
+Responsable du traitement : Haytham B. (entrepreneur individuel) — contact : <a href="mailto:htm.bkhss@gmail.com">htm.bkhss@gmail.com</a></p>
+<p>Couverture : Union européenne (RGPD), Royaume-Uni (UK GDPR), États-Unis (CCPA/CPRA Californie + lois fédérales), Canada (LPRPDE/PIPEDA + Loi 25 Québec), Australie (Privacy Act 1988).</p>
+<h2>En résumé</h2>
+<ul>
+<li>Vos tâches et votre compte sont stockés sur <strong>Supabase</strong> (hébergement UE).</li>
+<li>Vos messages au chat IA sont relayés par notre passerelle sécurisée vers <strong>Google Cloud — Vertex AI</strong>, traité dans l'<strong>Union européenne</strong> ou aux <strong>États-Unis</strong> selon le pays de votre compte (voir §4), après une <strong>anonymisation automatique sur votre appareil</strong>.</li>
+<li>Vos achats sont gérés par <strong>Apple</strong> et suivis par <strong>RevenueCat</strong>.</li>
+<li><strong>Aucune publicité, aucun traceur tiers, aucune revente de données.</strong></li>
+<li>Vous pouvez <strong>supprimer votre compte et toutes vos données à tout moment</strong> depuis l'application.</li>
+</ul>
+<h2>1. Qui sommes-nous</h2>
+<p>L'application « Majoro » (l'« Application ») est éditée par Haytham B., entrepreneur individuel (l'« Éditeur »), agissant en qualité de responsable du traitement au sens du RGPD. Pour toute question : <a href="mailto:htm.bkhss@gmail.com.">htm.bkhss@gmail.com.</a></p>
+<h2>2. Données que nous traitons</h2>
+<h3>2.1 Données que vous fournissez</h3>
+<ul>
+<li>Identifiants de compte : adresse e-mail, nom d'affichage.</li>
+<li>Authentification : jetons « Sign in with Apple » / Google, sessions (stockés dans le Trousseau iOS et chez Supabase Auth).</li>
+<li>Tâches, projets, catégories personnalisées, journal : titres, dates, descriptions, état d'avancement.</li>
+<li>Conversations avec le chat IA : les messages que vous saisissez et les réponses de Majoro.</li>
+<li>État d'abonnement : statut premium, historique d'achat (via Apple + RevenueCat).</li>
+<li>Préférences : langue, thème, horaires de notification.</li>
+</ul>
+<h3>2.2 Données lues avec votre autorisation (restent sur l'appareil)</h3>
+<ul>
+<li><strong>HealthKit (lecture seule)</strong> : pas, énergie active, minutes d'exercice — utilisées uniquement localement pour votre tableau de bord. Jamais transmises à un serveur ni à l'IA.</li>
+<li><strong>Microphone + reconnaissance vocale</strong> : pour dicter vos tâches. L'audio est traité par le moteur d'Apple ; nous ne stockons ni ne transmettons l'audio.</li>
+<li><strong>Temps d'écran / Contrôles parentaux (Family Controls)</strong> : détection de seuils (ex. « &gt; 3 h aujourd'hui ») et blocage optionnel d'applications pendant une session « Let's do it now ». Le détail par application ne quitte jamais votre appareil ; nous ne recevons que le déclencheur.</li>
+<li><strong>Notifications locales</strong> : rappels planifiés localement. Nous n'utilisons pas de notifications push distantes.</li>
+</ul>
+<h3>2.3 Données techniques journalisées</h3>
+<ul>
+<li>Longueur (et non le contenu) des requêtes IA — pour le quota quotidien.</li>
+<li>Codes d'erreur HTTP de notre passerelle — pour diagnostiquer les pannes.</li>
+<li>Événements d'authentification (connexion / déconnexion) — sécurité.</li>
+<li>Événements d'usage <strong>rattachés à votre compte</strong> (étapes d'onboarding, ouverture du paywall, interactions avec les messages du majordome, événements d'abonnement transmis par notre gestionnaire d'achats) — sur notre propre infrastructure, sans outil d'analyse tiers. Ces événements portent l'identifiant de votre compte : ils ne sont pas anonymes, et ils sont supprimés avec votre compte.</li>
+<li>Quelques <strong>préférences de profil</strong> rattachées au même identifiant : mascotte choisie, ton du majordome, langue, version de l'application et type d'abonnement (gratuit ou premium). Elles servent à comprendre quelles fonctions sont utilisées, et par qui elles le sont.</li>
+</ul>
+<ul>
+<li><strong>Contenus que vous signalez.</strong> Quand vous utilisez « Signaler ce contenu » sur une réponse du majordome, nous conservons cette réponse <strong>et la question qui l'a précédée</strong> — sans quoi il est impossible de juger si la réponse était fautive. Les deux sont d'abord <strong>anonymisés</strong> sur votre appareil, par le même masquage qui protège déjà vos messages avant leur envoi au fournisseur d'IA : prénoms, noms, numéros de téléphone, adresses e-mail et coordonnées bancaires sont remplacés par des marqueurs. Nous y joignons l'identifiant de votre compte, la langue et la version de l'application. C'est le seul cas où un contenu de conversation est conservé <strong>durablement</strong> sur nos serveurs, et il n'a lieu que si vous le déclenchez. Ces signalements sont supprimés avec votre compte.</li>
+</ul>
+<p>Nous ne journalisons <strong>jamais</strong> : le contenu de vos messages, vos titres de tâches, vos valeurs de santé. Deux exceptions, et les deux sont bornées : le signalement décrit ci-dessus, que vous déclenchez vous-même et dont le contenu est anonymisé avant de partir ; et le cache technique décrit au §4, qui garde la réponse de l'assistant le temps qu'elle vous parvienne, normalement moins de deux heures, et ne contient jamais votre message.</p>
+<h2>3. Sous-traitants</h2>
+<p>Nous nous appuyons sur les prestataires suivants, encadrés par des accords de traitement (DPA) ou équivalents :</p>
+<ul>
+<li><strong>Supabase</strong> — base de données, authentification, fonctions serveur. Hébergement : UE.</li>
+<li><strong>Google Cloud (Vertex AI)</strong> — inférence du chat IA. Traitement : Union européenne ou États-Unis selon le pays de votre compte (§4). Reçoit uniquement les requêtes (préalablement anonymisées).</li>
+<li><strong>RevenueCat</strong> — gestion des abonnements. États-Unis. Reçoit un identifiant anonymisé et des identifiants de produit.</li>
+<li><strong>Apple</strong> — Sign in with Apple, achats (StoreKit), reconnaissance vocale.</li>
+<li><strong>Sentry</strong> — rapports de plantage techniques (diagnostic de stabilité), sans contenu personnel de vos tâches ou messages.</li>
+</ul>
+<p>Nous ne partageons aucune donnée avec des régies publicitaires ou des courtiers en données. Aucun SDK de pistage tiers n'est intégré.</p>
+<h2>4. Le chat IA et ses limites</h2>
+<p>Lorsque vous discutez avec Majoro, votre message suit ce chemin : votre appareil → notre passerelle Supabase (authentification + quota) → Google Cloud Vertex AI → réponse → votre appareil.</p>
+<p><strong>Où votre message est traité.</strong> Nous ne traitons pas tout le monde au même endroit : la région suit le <strong>pays de votre compte Apple</strong>.</p>
+<ul>
+<li>France, Belgique, autres pays de l'Espace économique européen → <strong>Union européenne</strong></li>
+<li>Royaume-Uni, Suisse → <strong>Union européenne</strong></li>
+<li>États-Unis, Canada, Australie, Nouvelle-Zélande → <strong>États-Unis</strong></li>
+<li>tout autre pays → <strong>Union européenne</strong></li>
+</ul>
+<p>Ce pays vient de votre boutique App Store, <strong>pas de votre adresse IP</strong>. Si votre compte est européen, vos messages restent traités dans l'Union européenne même lorsque vous voyagez. La région est fixée à votre première utilisation de l'assistant et ne change plus ensuite. Vous pouvez la consulter à tout moment dans <strong>Réglages &gt; Confidentialité IA</strong>.</p>
+<p><strong>Anonymisation systématique.</strong> Avant tout envoi, votre appareil détecte et masque les données sensibles (noms, e-mails, téléphones, adresses, termes médicaux, identifiants bancaires, marqueurs religieux, etc.) en les remplaçant par des marqueurs (<code>[PERSON_1]</code>, <code>[MED_1]</code>…). Cela s'applique à votre message, à l'historique récent et aux titres de tâches fournis en contexte. Les marqueurs sont restaurés localement dans la réponse. C'est <strong>toujours actif</strong> — aucun réglage à activer.</p>
+<p><strong>Limites de l'anonymisation (« best-effort »).</strong> La détection repose sur des dictionnaires et des motifs : elle est <strong>au mieux, non exhaustive</strong>. Une information formulée de façon inhabituelle peut ne pas être reconnue et atteindre le prestataire non masquée. Vous restez maître de ce que vous saisissez : évitez d'écrire dans le chat des informations très sensibles que vous ne voudriez pas voir quitter votre appareil.</p>
+<p><strong>Pas de conseil professionnel.</strong> Majoro est un assistant de productivité. Ses réponses ne constituent <strong>pas</strong> un conseil médical, juridique, financier, psychologique ou de sécurité. N'utilisez pas Majoro pour des décisions à enjeu vital ou réglementé. En cas d'urgence, contactez les services compétents.</p>
+<p><strong>Ce que notre serveur journalise.</strong> La passerelle ne journalise que des métadonnées techniques (longueur du message, niveau d'abonnement, horodatage) pour le quota — <strong>jamais le contenu</strong>. Le contenu est transmis à Google Cloud pour inférence uniquement ; il n'est pas conservé durablement dans nos bases.</p>
+<p><strong>Une exception, technique et courte.</strong> La réponse de l'assistant est gardée dans un cache de service, le temps que votre appareil la reçoive. Ce cache existe pour que, si la réponse se perd en chemin et que l'application la redemande, elle vous soit rendue telle quelle plutôt que regénérée et décomptée une seconde fois de votre quota. Votre message, lui, n'y figure pas : seule une empreinte calculée à partir de lui y est stockée, dont on ne peut pas le reconstituer.</p>
+<p><strong>Combien de temps, exactement.</strong> Une tâche de nettoyage passe toutes les dix minutes et retire le contenu des réponses une heure après la fin de leur fenêtre d'utilité. En fonctionnement normal, cela fait <strong>moins de deux heures</strong>. Ce n'est pas une garantie absolue : si cette tâche s'interrompt à la suite d'un incident, le délai s'allonge jusqu'à son rétablissement. Une mesure de l'âge du plus ancien contenu conservé existe côté serveur ; sa remontée automatique n'est pas encore en service.</p>
+<p><strong>Ce que « Effacer l'historique IA » fait ici.</strong> Le contenu des réponses est effacé immédiatement. Les lignes techniques, elles, sont conservées sans leur contenu : elles ne portent plus que des empreintes, et elles servent à éviter qu'un renvoi de votre appareil vous décompte une seconde fois le même message. Elles disparaissent au nettoyage suivant, et immédiatement avec votre compte.</p>
+<p><strong>Ce que Google conserve.</strong> Google s'engage contractuellement à <strong>ne pas entraîner ni affiner ses modèles</strong> sur ces requêtes. En revanche, du fait du fonctionnement de sa plateforme : les requêtes peuvent être <strong>mises en cache jusqu'à 24 heures</strong> dans le centre de données qui a traité l'appel, à l'intérieur de votre région (pour réduire la latence) ; et si ses classificateurs automatiques de sécurité détectent un usage potentiellement abusif, les requêtes concernées peuvent être <strong>journalisées jusqu'à 90 jours</strong> dans cette même région, aux seules fins d'enquête sur cet abus, et examinées par des personnels habilités de Google. Ces contenus ont été anonymisés sur votre appareil avant l'envoi.</p>
+<p><strong>Désactivation.</strong> Vous pouvez couper l'IA à tout moment (kill-switch dans les Réglages) : plus aucune requête ne part vers la passerelle.</p>
+<h2>5. Vos droits (RGPD et équivalents)</h2>
+<ul>
+<li><strong>Accès (art. 15)</strong> : demande par e-mail ; export JSON sous 30 jours.</li>
+<li><strong>Rectification (art. 16)</strong> : modifiez votre compte dans les Réglages, ou contactez-nous.</li>
+<li><strong>Effacement (art. 17)</strong> : Réglages → Compte → Supprimer mon compte. Efface <strong>toutes</strong> vos données serveur, immédiatement et irréversiblement. Vous pouvez aussi effacer l'historique du chat IA depuis Réglages → À propos.</li>
+<li><strong>Portabilité (art. 20)</strong> : export de vos données au format JSON.</li>
+<li><strong>Opposition (art. 21)</strong> : désactivez l'IA — plus rien n'est envoyé à Google Cloud.</li>
+<li><strong>Décision automatisée (art. 22)</strong> : Majoro propose, mais ne prend aucune décision automatisée à effet juridique ou significatif ; aucune action irréversible n'est exécutée sans votre confirmation.</li>
+</ul>
+<p>Utilisateurs de Californie (CCPA/CPRA) : droits de connaître, supprimer, corriger, et limiter l'usage des informations sensibles. <strong>Nous ne vendons ni ne partageons vos informations personnelles.</strong> Pour exercer ces droits ou désigner un agent autorisé : <a href="mailto:htm.bkhss@gmail.com.">htm.bkhss@gmail.com.</a></p>
+<p>Vous pouvez saisir votre autorité de contrôle (en France : la CNIL).</p>
+<h2>6. Base légale (art. 6 RGPD)</h2>
+<ul>
+<li>Compte, tâches, synchronisation, chat : <strong>exécution du contrat</strong>.</li>
+<li>Quota d'usage IA : <strong>intérêt légitime</strong> (usage équitable).</li>
+<li>Abonnements : <strong>exécution du contrat</strong>.</li>
+<li>HealthKit / Temps d'écran : <strong>consentement</strong> (et art. 9 pour la santé), accordé via les dialogues iOS.</li>
+</ul>
+<h2>7. Conservation</h2>
+<ul>
+<li>Compte, tâches, projets : jusqu'à la suppression de votre compte.</li>
+<li>Historique du chat côté serveur : néant. Seule exception, la réponse de l'assistant reste dans un cache de service, normalement moins de 2 heures (voir §4 pour le critère exact et ses limites).</li>
+<li>Historique du chat sur l'appareil : purge automatique.</li>
+<li>Journaux d'usage IA (longueur) : 90 jours.</li>
+<li>Journaux d'authentification : 365 jours.</li>
+<li>Sauvegardes : selon la rétention de Supabase (restauration ponctuelle 7 jours).</li>
+</ul>
+<p>À la suppression du compte, ces données sont effacées côté serveur sous 24 h et des sauvegardes sous 30 jours.</p>
+<h2>8. Sécurité</h2>
+<ul>
+<li>En transit : HTTPS / TLS.</li>
+<li>Au repos : chiffrement de la base par Supabase.</li>
+<li>Authentification : jetons dans le Trousseau iOS (Secure Enclave si disponible).</li>
+<li>Cloisonnement : règles de sécurité au niveau des lignes (RLS) — un utilisateur ne peut jamais lire les données d'un autre.</li>
+</ul>
+<p>Aucun système n'est infaillible. En cas de violation présumée, nous notifierons les personnes concernées et l'autorité compétente dans les 72 heures (art. 33 RGPD).</p>
+<h2>9. Transferts internationaux</h2>
+<ul>
+<li>Supabase : UE.</li>
+<li>Google Cloud (Vertex AI) : Union européenne ou États-Unis, selon le pays de votre compte (§4). Les transferts vers les États-Unis sont couverts par l'Avenant de traitement des données Cloud de Google, qui intègre les Clauses Contractuelles Types, Google adhérant en outre au cadre UE–États-Unis (Data Privacy Framework).</li>
+<li>RevenueCat : États-Unis, avec identifiant anonymisé et clauses contractuelles types (art. 46 RGPD).</li>
+<li>Apple : selon sa politique et clauses contractuelles types.</li>
+</ul>
+<h2>10. Âge recommandé et mineurs</h2>
+<p>En raison des interactions avec une intelligence artificielle, l'Application est <strong>recommandée à partir de 12 ans</strong>. Elle n'est pas destinée aux enfants sous l'âge minimum applicable (notamment 13 ans aux États-Unis et au Canada, 15 ans en France et en Australie, jusqu'à 16 ans selon les pays de l'UE). Nous ne collectons pas sciemment de données de mineurs sous ces seuils. Si vous pensez qu'un enfant nous a transmis des données, contactez-nous : nous les supprimerons.</p>
+<h2>11. Absence de garantie et limitation de responsabilité</h2>
+<p>L'Application est fournie « <strong>en l'état</strong> » et « selon disponibilité », sans garantie d'absence d'erreur, d'exactitude des suggestions de l'IA, ni de disponibilité ininterrompue. Dans les limites permises par la loi, l'Éditeur ne saurait être tenu responsable des dommages indirects, pertes de données, pertes d'exploitation ou de chance résultant de l'usage de l'Application ou de la confiance accordée aux suggestions de l'IA. Rien dans le présent document ne limite la responsabilité en cas de dol, faute lourde ou dommage corporel. Les modalités détaillées et le plafond de responsabilité figurent dans les Conditions Générales d'Utilisation, que vous acceptez à l'inscription.</p>
+<h2>12. Modifications</h2>
+<p>Nous mettons à jour ce document en cas de nouveau sous-traitant, de nouvelle catégorie de données, ou d'évolution légale. La date en tête reflète la dernière révision ; les changements substantiels sont signalés dans l'Application.</p>
+<h2>13. Contact</h2>
+<p>Pour toute question ou demande relative à vos données : <a href="mailto:htm.bkhss@gmail.com">htm.bkhss@gmail.com</a> — réponse sous 30 jours maximum (art. 12 RGPD).</p>
+<footer>Texte identique à celui affiché dans l'application Majoro.</footer>
+</body>
+</html>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="majoro-source" content="PrivacyPolicyContent.swift:english">
-<meta name="majoro-source-sha256" content="bb0275af17dbf4e458c070368e9cc7ac5df67616b45eea2e781b115b29a148fa">
+<meta name="majoro-source-sha256" content="31cb62ead1857b0c1284b53b92fdbc96e8375ef2773b9705348a3df238f88d69">
 <title>Privacy Policy — Majoro</title>
 <style>
 body{font:16px/1.6 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;max-width:760px;margin:0 auto;padding:32px 20px;color:#1d1d1f;background:#fff}
@@ -17,7 +17,7 @@ nav{font-size:.9em;margin-bottom:24px} footer{margin-top:48px;font-size:.85em;co
 <body>
 <nav><a href="index.html">Majoro</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="confidentialite.html">Français</a></nav>
 <h1>Privacy Policy — Majoro</h1>
-<p>Last updated: October 31, 2026 — Version 2.3<br>
+<p>Last updated: November 1, 2026 — Version 2.4<br>
 Data Controller: Haytham B. (sole proprietor) — contact: <a href="mailto:contact@majorocorp.com">contact@majorocorp.com</a></p>
 <p>Coverage: European Union (GDPR), United Kingdom (UK GDPR), United States (CCPA/CPRA California + federal law), Canada (PIPEDA + Quebec Law 25), Australia (Privacy Act 1988).</p>
 <h2>In short</h2>
@@ -34,7 +34,7 @@ Data Controller: Haytham B. (sole proprietor) — contact: <a href="mailto:conta
 <h3>2.1 Data you provide</h3>
 <ul>
 <li>Account identifiers: email address, display name.</li>
-<li>Authentication: Sign in with Apple / Google tokens, sessions (stored in the iOS Keychain and Supabase Auth).</li>
+<li>Authentication: Sign in with Apple / Google tokens, or email address and password if you create an account by email; sessions (stored in the iOS Keychain and Supabase Auth). Your password is never stored in plain text: Supabase only keeps an encrypted fingerprint (hash) that neither we nor anyone else can read back. Verification and reset codes are sent to you by email through our email provider <strong>Brevo</strong>.</li>
 <li>Tasks, projects, custom categories, journal: titles, dates, descriptions, completion state.</li>
 <li>AI chat conversations: the messages you type and Majoro's responses.</li>
 <li>Subscription state: premium status, purchase history (via Apple + RevenueCat).</li>
@@ -67,6 +67,7 @@ Data Controller: Haytham B. (sole proprietor) — contact: <a href="mailto:conta
 <li><strong>Supabase</strong> — database, authentication, server functions. Hosting: EU.</li>
 <li><strong>Google Cloud (Vertex AI)</strong> — AI chat inference. Processing: European Union or United States depending on your account country (§4). Receives only requests (previously anonymized).</li>
 <li><strong>RevenueCat</strong> — subscription management. United States. Receives an anonymized ID and product identifiers.</li>
+<li><strong>Brevo</strong> (Sendinblue SAS, France) — sends the code emails (address verification, forgotten password) if you use an email account. Receives your email address and the content of those messages, nothing else.</li>
 <li><strong>Apple</strong> — Sign in with Apple, purchases (StoreKit), speech recognition.</li>
 <li><strong>Sentry</strong> — technical crash reports (stability diagnostics), without personal content of your tasks or messages.</li>
 </ul>
@@ -130,6 +131,7 @@ Data Controller: Haytham B. (sole proprietor) — contact: <a href="mailto:conta
 <h2>9. International transfers</h2>
 <ul>
 <li>Supabase: EU.</li>
+<li>Brevo: European Union (France).</li>
 <li>Google Cloud (Vertex AI): European Union or United States, depending on your account country (§4). Transfers to the United States are covered by Google's Cloud Data Processing Addendum, which incorporates the Standard Contractual Clauses, Google also adhering to the EU–U.S. Data Privacy Framework.</li>
 <li>RevenueCat: United States, with anonymized ID and Standard Contractual Clauses (Art. 46 GDPR).</li>
 <li>Apple: per its policy and Standard Contractual Clauses.</li>

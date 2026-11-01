@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="majoro-source" content="PrivacyPolicyContent.swift:french">
-<meta name="majoro-source-sha256" content="3da1c9d702e938578aab9e8a87d5d57ba1aff016748a845aaf9410cea118ef5b">
+<meta name="majoro-source-sha256" content="6daafda88247bf274a8e30a267bcf46ebebc72bd6f23cf638be0810fde19fab5">
 <title>Politique de confidentialité — Majoro</title>
 <style>
 body{font:16px/1.6 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;max-width:760px;margin:0 auto;padding:32px 20px;color:#1d1d1f;background:#fff}
@@ -17,7 +17,7 @@ nav{font-size:.9em;margin-bottom:24px} footer{margin-top:48px;font-size:.85em;co
 <body>
 <nav><a href="index.html">Majoro</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="cgu.html">CGU</a> · <a href="privacy.html">English</a></nav>
 <h1>Politique de confidentialité — Majoro</h1>
-<p>Dernière mise à jour : 31 octobre 2026 — Version 2.3<br>
+<p>Dernière mise à jour : 1er novembre 2026 — Version 2.4<br>
 Responsable du traitement : Haytham B. (entrepreneur individuel) — contact : <a href="mailto:contact@majorocorp.com">contact@majorocorp.com</a></p>
 <p>Couverture : Union européenne (RGPD), Royaume-Uni (UK GDPR), États-Unis (CCPA/CPRA Californie + lois fédérales), Canada (LPRPDE/PIPEDA + Loi 25 Québec), Australie (Privacy Act 1988).</p>
 <h2>En résumé</h2>
@@ -34,7 +34,7 @@ Responsable du traitement : Haytham B. (entrepreneur individuel) — contact : <
 <h3>2.1 Données que vous fournissez</h3>
 <ul>
 <li>Identifiants de compte : adresse e-mail, nom d'affichage.</li>
-<li>Authentification : jetons « Sign in with Apple » / Google, sessions (stockés dans le Trousseau iOS et chez Supabase Auth).</li>
+<li>Authentification : jetons « Sign in with Apple » / Google, ou adresse e-mail et mot de passe si vous créez un compte par e-mail ; sessions (stockées dans le Trousseau iOS et chez Supabase Auth). Le mot de passe n'est jamais conservé en clair : Supabase n'en garde qu'une empreinte chiffrée (hachage), que ni nous ni personne ne peut relire. Les codes de vérification et de réinitialisation vous sont envoyés par e-mail via notre prestataire d'envoi <strong>Brevo</strong>.</li>
 <li>Tâches, projets, catégories personnalisées, journal : titres, dates, descriptions, état d'avancement.</li>
 <li>Conversations avec le chat IA : les messages que vous saisissez et les réponses de Majoro.</li>
 <li>État d'abonnement : statut premium, historique d'achat (via Apple + RevenueCat).</li>
@@ -67,6 +67,7 @@ Responsable du traitement : Haytham B. (entrepreneur individuel) — contact : <
 <li><strong>Supabase</strong> — base de données, authentification, fonctions serveur. Hébergement : UE.</li>
 <li><strong>Google Cloud (Vertex AI)</strong> — inférence du chat IA. Traitement : Union européenne ou États-Unis selon le pays de votre compte (§4). Reçoit uniquement les requêtes (préalablement anonymisées).</li>
 <li><strong>RevenueCat</strong> — gestion des abonnements. États-Unis. Reçoit un identifiant anonymisé et des identifiants de produit.</li>
+<li><strong>Brevo</strong> (Sendinblue SAS, France) — envoi des e-mails de code (vérification de l'adresse, mot de passe oublié) si vous utilisez un compte par e-mail. Reçoit votre adresse e-mail et le contenu de ces messages, rien d'autre.</li>
 <li><strong>Apple</strong> — Sign in with Apple, achats (StoreKit), reconnaissance vocale.</li>
 <li><strong>Sentry</strong> — rapports de plantage techniques (diagnostic de stabilité), sans contenu personnel de vos tâches ou messages.</li>
 </ul>
@@ -130,6 +131,7 @@ Responsable du traitement : Haytham B. (entrepreneur individuel) — contact : <
 <h2>9. Transferts internationaux</h2>
 <ul>
 <li>Supabase : UE.</li>
+<li>Brevo : Union européenne (France).</li>
 <li>Google Cloud (Vertex AI) : Union européenne ou États-Unis, selon le pays de votre compte (§4). Les transferts vers les États-Unis sont couverts par l'Avenant de traitement des données Cloud de Google, qui intègre les Clauses Contractuelles Types, Google adhérant en outre au cadre UE–États-Unis (Data Privacy Framework).</li>
 <li>RevenueCat : États-Unis, avec identifiant anonymisé et clauses contractuelles types (art. 46 RGPD).</li>
 <li>Apple : selon sa politique et clauses contractuelles types.</li>
